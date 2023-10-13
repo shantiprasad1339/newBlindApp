@@ -1,4 +1,4 @@
-#root{
+#root {
 
     width: auto;
     height: 100%;
@@ -6,7 +6,7 @@
     background-color: #44687b;
 }
 
-.dragText{
+.dragText {
     position: absolute;
     color: #ffffff;
     top: 11%;
@@ -15,28 +15,31 @@
     border-radius: 50%;
     background-color: #929292;
     border: 2px dotted;
-   
-   
+
+
     background-color: #929292;
 }
+
 .css-y8ay40-MuiTableCell-root {
     border-bottom: 5px solid rgb(23, 22, 22);
     background-color: #428BCA !important;
     color: rgb(255, 255, 255) !important;
 }
+
 .css-1ex1afd-MuiTableCell-root {
     border-bottom: 1px solid rgb(125, 125, 125) !important;
     background-color: #f5f9fc !important;
     color: #000 !important;
 }
 
-.outBox{
+.outBox {
     width: 700px;
     text-align: center;
-    margin:auto;
+    margin: auto;
     margin-bottom: 20px;
 }
-.css-0{
+
+.css-0 {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -79,15 +82,23 @@
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.topButtons{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 10%;
+
+.topButtons {
+    display: flex;
+    /* grid-template-columns: auto auto auto auto auto; */
+    gap: 20px;
     row-gap: 26%;
     margin-top: 7rem;
+    row-gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content: center;
+    max-width: 1000px;
+    text-transform: capitalize;
 }
-.dragAndDropDiv{
+
+.dragAndDropDiv {
     width: 100vw;
     height: auto;
     text-align: center;
@@ -96,16 +107,18 @@
     align-items: center;
     margin-top: 8%;
 }
-.inputDiv{
-width: 250px;
-height: 250px;
-background-color: #a0bad3;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 15px;
+
+.inputDiv {
+    width: 250px;
+    height: 250px;
+    background-color: #a0bad3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
-button{
+
+.topButtons button {
     background: rgb(160, 186, 211);
     border: none;
     outline: none;
@@ -115,7 +128,10 @@ button{
     color: white;
     font-size: small;
     font-weight: 600;
+
+    text-transform: capitalize;
 }
+
 .guZdik {
     position: relative;
     display: flex;
@@ -133,23 +149,28 @@ button{
     -webkit-box-flex: 0;
     flex-grow: 0;
 }
-.jWkLDY > span {
+
+.jWkLDY>span {
     font-size: 10px !important;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
 }
-svg{
-   display: none;
+
+svg {
+    display: none;
 }
+
 .kFhUBM span {
     text-decoration: underline;
     background: white;
 }
-.jWkLDY > span {
+
+.jWkLDY>span {
     font-size: 10px !important;
     color: rgb(0, 0, 0);
     background-color: #ffffff !important;
 }
+
 .jWkLDY {
     display: flex;
     -webkit-box-pack: justify;
@@ -157,4 +178,23 @@ svg{
     -webkit-box-flex: 1;
     flex-grow: 1;
     background: white;
+}
+
+.outBox {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.form-control[type=file]:not(:disabled):not([readonly]) {
+    cursor: pointer;
+    width: 100%;
+    max-width: 471px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: transparent;
 }

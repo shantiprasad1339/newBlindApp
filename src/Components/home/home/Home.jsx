@@ -5,6 +5,7 @@ import { Box } from "@chakra-ui/react";
 import TableComponent from "../../Table";
 import { FileUploader } from "react-drag-drop-files";
 
+
 import {
   Paper,
   Table,
@@ -96,18 +97,40 @@ const Home = () => {
             </button>
             <button style={{ background: "#a0bad3" }}>audible statics</button>
             <button style={{ background: "#a0bad3" }}>undisturbed mode</button>
-            <button style={{ background: "#a0bad3" }}>read out aloud</button>
+            {/* <button style={{ background: "#a0bad3" }}>read out aloud</button> */}
+            <div class="dropdown">
+  <button class="btn dropdown-toggle text-light"  style={{ background: "#a0bad3", fontSize:'13px', fontWeight:'600' }} type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  read out aloud
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Press F for female voice</a>
+    <a class="dropdown-item" href="#">Press M for Male voice</a>
+    <a class="dropdown-item" href="#">Press B for Stop</a>
+  </div>
+</div>
           </div>
 
           <div className="dragAndDropDiv">
-            <div className="inputDiv">
-              <FileUploader
-                handleChange={handleFile}
-                name="file"
-                types={fileTypes}
+            {/* <div className="inputDiv"> */}
+           
+              <br></br>
+              <input
+                type="file"
                 className="form-control"
-              />
-            </div>
+                accept=".xlsx,.xls"
+                onChange={handleFile}
+                required
+              ></input>
+             
+              {excelFileError ? (
+                <div className="text-danger" style={{ marginTop: "10px" }}>
+                  {excelFileError}
+                </div>
+              ) : (
+                <p style={{ marginTop: "10px", color: "white" }}></p>
+              )}
+           
+            {/* </div> */}
           </div>
 
           <br></br>
@@ -180,6 +203,10 @@ const Home = () => {
         </Box>
       </div>
       <TableComponent excelData={excelData} />
+
+
+
+      
     </>
   );
 };

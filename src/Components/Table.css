@@ -13,12 +13,15 @@
   margin: auto;
   margin-bottom: 20px;
 }
+form{
+  background: transparent;
+}
   .speakButton{
     width: 100px;
     height: 40px;
     border: none;
     outline: none;
-background-color: #44687b;
+background-color: #0800ff;
 color: white;
 border-radius: 5px;
 position: fixed;
@@ -51,3 +54,34 @@ position: fixed;
 bottom: 5%;
 right: 5%;
   }
+
+
+
+
+
+  .helpBtn{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    cursor: pointer;
+    user-select: none ;
+  }
+  .popupDiv{
+    position: absolute;
+    background: transparent !important;
+    bottom: -148%;
+    display: block;
+   list-style: none;
+    width: 200px;
+    /* height: 150px; */
+  }
+  
+  
+.popup-content {
+  margin: auto;
+  background: transparent;
+  width: 50%;
+  padding: 5px;
+  color: white;
+  border: none;
+}
